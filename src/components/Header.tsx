@@ -14,19 +14,19 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="flex items-center space-x-1 hover:text-blue-200 transition-colors">
+            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Home className="h-4 w-4" />
               <span>Home</span>
             </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-blue-200 transition-colors">
+            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Package className="h-4 w-4" />
               <span>Products</span>
             </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-blue-200 transition-colors">
+            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Info className="h-4 w-4" />
               <span>About</span>
             </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-blue-200 transition-colors">
+            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Mail className="h-4 w-4" />
               <span>Contact</span>
             </a>

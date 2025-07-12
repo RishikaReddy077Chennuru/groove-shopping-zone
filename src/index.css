@@ -8,48 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 98%;
-    --foreground: 224 71% 4%;
+    --background: 30 43% 97%;           /* #FAF7F3 - Very light cream */
+    --foreground: 25 20% 25%;           /* Dark brown for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card: 35 50% 88%;                 /* #F0E4D3 - Light cream */
+    --card-foreground: 25 20% 25%;      /* Dark brown for card text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover: 35 50% 88%;              /* #F0E4D3 - Light cream */
+    --popover-foreground: 25 20% 25%;   /* Dark brown */
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 199 89% 55%;
-    --primary-dark: 199 89% 40%;
+    --primary: 11 39% 73%;              /* #D9A299 - Dusty rose */
+    --primary-foreground: 0 0% 100%;    /* White text on primary */
+    --primary-light: 11 45% 78%;        /* Lighter dusty rose */
+    --primary-dark: 11 35% 65%;         /* Darker dusty rose */
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 224 71% 4%;
+    --secondary: 30 35% 77%;            /* #DCC5B2 - Medium beige */
+    --secondary-foreground: 25 20% 25%; /* Dark brown */
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 8% 46%;
+    --muted: 30 35% 77%;                /* #DCC5B2 - Medium beige */
+    --muted-foreground: 25 20% 45%;     /* Medium brown */
 
-    --accent: 199 89% 95%;
-    --accent-foreground: 199 89% 15%;
+    --accent: 35 50% 88%;               /* #F0E4D3 - Light cream */
+    --accent-foreground: 25 20% 25%;    /* Dark brown */
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;           /* Keep red for errors */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 199 89% 48%;
+    --border: 30 35% 77%;               /* #DCC5B2 - Medium beige */
+    --input: 30 35% 77%;                /* #DCC5B2 - Medium beige */
+    --ring: 11 39% 73%;                 /* #D9A299 - Dusty rose */
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 76% 36%;             /* Keep green for success */
+    --success-foreground: 0 0% 100%;    /* White */
     
-    --warning: 45 93% 47%;
-    --warning-foreground: 0 0% 100%;
+    --warning: 45 93% 47%;              /* Keep orange for warnings */
+    --warning-foreground: 0 0% 100%;    /* White */
 
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(199 89% 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(199 89% 48%), hsl(199 89% 35%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(11 39% 73%), hsl(11 35% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(11 39% 73%), hsl(30 35% 77%));
+    --gradient-card: linear-gradient(135deg, hsl(35 50% 88%), hsl(30 43% 97%));
     
-    --shadow-card: 0 4px 6px -1px hsl(199 89% 48% / 0.1);
-    --shadow-hover: 0 10px 25px -3px hsl(199 89% 48% / 0.15);
+    --shadow-card: 0 4px 6px -1px hsl(11 39% 73% / 0.1);
+    --shadow-hover: 0 10px 25px -3px hsl(11 39% 73% / 0.15);
     
     --radius: 0.75rem;
 
