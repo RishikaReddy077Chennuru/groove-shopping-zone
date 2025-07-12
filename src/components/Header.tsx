@@ -1,5 +1,6 @@
 import { Diamond, Home, Package, Info, Mail, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,29 +8,29 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <Diamond className="h-8 w-8" />
             <span className="text-2xl font-bold">eShop</span>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+            <Link to="/" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Home className="h-4 w-4" />
               <span>Home</span>
-            </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+            </Link>
+            <Link to="/products" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Package className="h-4 w-4" />
               <span>Products</span>
-            </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+            </Link>
+            <Link to="/about" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Info className="h-4 w-4" />
               <span>About</span>
-            </a>
-            <a href="#" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
+            </Link>
+            <Link to="/contact" className="flex items-center space-x-1 hover:text-orange-200 transition-colors">
               <Mail className="h-4 w-4" />
               <span>Contact</span>
-            </a>
+            </Link>
           </nav>
 
           {/* Cart */}

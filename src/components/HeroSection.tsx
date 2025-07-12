@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Truck, Shield, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -14,9 +15,11 @@ const HeroSection = () => {
             Your premium destination for cutting-edge technology and innovative products
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
-              🛒 Start Shopping
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg">
+                🛒 Start Shopping
+              </Button>
+            </Link>
             <Button variant="outline" size="lg">
               ▶ Watch Demo
             </Button>

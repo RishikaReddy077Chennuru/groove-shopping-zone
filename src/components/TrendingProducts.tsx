@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
+import gamingHeadset from "@/assets/gaming-headset.jpg";
+import wirelessCharger from "@/assets/wireless-charger.jpg";
+import smartWatch from "@/assets/smart-watch.jpg";
 
 const TrendingProducts = () => {
   const products = [
@@ -12,7 +16,8 @@ const TrendingProducts = () => {
       rating: 5,
       badge: "-25%",
       badgeColor: "bg-destructive",
-      bgColor: "bg-gradient-to-br from-purple-400 to-purple-600"
+      bgColor: "bg-gradient-to-br from-purple-400 to-purple-600",
+      image: gamingHeadset
     },
     {
       id: 2,
@@ -23,7 +28,8 @@ const TrendingProducts = () => {
       rating: 4.3,
       badge: "New",
       badgeColor: "bg-success",
-      bgColor: "bg-gradient-to-br from-green-400 to-green-600"
+      bgColor: "bg-gradient-to-br from-green-400 to-green-600",
+      image: wirelessCharger
     },
     {
       id: 3,
@@ -34,7 +40,8 @@ const TrendingProducts = () => {
       rating: 4.9,
       badge: "Hot",
       badgeColor: "bg-warning",
-      bgColor: "bg-gradient-to-br from-orange-400 to-orange-600"
+      bgColor: "bg-gradient-to-br from-orange-400 to-orange-600",
+      image: smartWatch
     }
   ];
 
@@ -62,13 +69,15 @@ const TrendingProducts = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="bg-card rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-              <div className={`${product.bgColor} h-48 relative flex items-center justify-center text-white`}>
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-cover"
+                />
                 <span className={`absolute top-4 right-4 ${product.badgeColor} text-white px-3 py-1 rounded-full text-sm font-bold`}>
                   {product.badge}
                 </span>
-                <div className="text-center">
-                  <h3 className="text-xl font-bold mb-2">{product.name.split(' ')[0]} {product.name.split(' ')[1]}</h3>
-                </div>
               </div>
               
               <div className="p-6">
@@ -93,9 +102,14 @@ const TrendingProducts = () => {
                   </div>
                 </div>
                 
-                <Button variant="cart" className="w-full mt-4">
-                  🛒 ADD TO CART
-                </Button>
+                <div className="flex gap-2 mt-4">
+                  <Button variant="cart" className="flex-1">
+                    🛒 ADD TO CART
+                  </Button>
+                  <Link to={`/product/${product.id}`}>
+                    <Button variant="outline">View</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
